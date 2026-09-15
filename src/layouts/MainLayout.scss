@@ -1,0 +1,19 @@
+.MainLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+
+  &-body {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+  }
+
+  &-content {
+    flex: 1;
+    overflow: auto;
+    padding: 24px;
+  }
+}
