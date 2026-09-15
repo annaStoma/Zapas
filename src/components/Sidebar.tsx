@@ -12,9 +12,7 @@ function Sidebar() {
               <NavLink
                 to={route.path}
                 end={route.path === '/'}
-                className={({ isActive }) =>
-                  isActive ? 'Sidebar-link active' : 'Sidebar-link'
-                }
+                className={({ isActive }) => (isActive ? 'Sidebar-link active' : 'Sidebar-link')}
               >
                 {route.label}
               </NavLink>

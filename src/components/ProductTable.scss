@@ -1,0 +1,40 @@
+.ProductTable {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-muted);
+    padding: 8px 12px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-panel);
+  }
+
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--color-panel);
+    font-size: 14px;
+    color: var(--color-ink);
+  }
+
+  tbody tr {
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-panel);
+    }
+  }
+
+  &-thumbnail {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+  }
+}
